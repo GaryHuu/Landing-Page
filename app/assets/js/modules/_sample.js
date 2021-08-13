@@ -10,11 +10,8 @@ export default class Sample {
    *  EVENTS
    * =================================== */
 
-
   /* ===================================
    *  METHODS
    * =================================== */
-  sampleGenerator() {
-
-  }
+  sampleGenerator() {}
 }
