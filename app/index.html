@@ -21,15 +21,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <!-- Header -->
-    <header></header>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__left">
+            <a href="#" class="header__title">
+              <span>Brandi</span>
+            </a>
+            <span class="header__slogan">I’am your tag line</span>
+          </div>
+          <nav>
+            <!-- Logo none on pc -->
+            <a href="#" class="header__title-mb">
+              <span>Brandi</span>
+            </a>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Burger Mobile -->
+          <!-- turn on add class : toggle -->
+          <div class="header__burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <!-- End Burger Mobile -->
+        </div>
+      </div>
+    </header>
 
     <!-- main content -->
     <main></main>
@@ -40,5 +88,10 @@
     <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
     <script src="assets/js/scripts-bundled.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="assets/js/modules/app.js"></script>
   </body>
 </html>

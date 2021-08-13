@@ -1,0 +1,127 @@
+.works {
+  padding-bottom: 100px;
+  .common-section {
+    padding-bottom: 0;
+  }
+
+  &__header {
+    p {
+      color: #384d5c;
+      text-align: center;
+      @include font-size(17px);
+      font-weight: 600;
+      padding: 0 120px;
+
+      @include breakpoint-custom-max(1024px) {
+        padding: 0 80px;
+      }
+
+      @include breakpoint-custom-max(769px) {
+        padding: 0 30px;
+      }
+
+      @include breakpoint-custom-max(414px) {
+        padding: 0 5px;
+      }
+    }
+
+    .works__filter {
+      @include flex();
+      flex-flow: row wrap;
+      margin-top: 46px;
+      justify-content: center;
+
+      li {
+        padding: 5px 20px;
+        @include font-size(15px);
+        white-space: nowrap;
+        font-weight: 600;
+        color: #062033;
+        border-radius: 6px;
+        margin: 6px 5px 0;
+        transition: all 0.3s linear;
+        cursor: pointer;
+
+        &:hover,
+        &.active {
+          color: $white-text;
+          background-color: #0eb493;
+        }
+      }
+    }
+  }
+
+  .works__img-list {
+    margin-top: 37px;
+    @include flex();
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .works__img-item {
+      cursor: pointer;
+      height: 300px;
+      width: 25%;
+      position: relative;
+
+      @include breakpoint-custom-max(1024px) {
+        width: 50%;
+        height: 250px;
+      }
+
+      @include breakpoint-custom-max(769px) {
+        width: 100%;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      &:hover .works__img-content {
+        transform: scale(1);
+      }
+
+      .works__img-content {
+        transform: scale(0);
+        transition: transform 0.3s ease-in;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background-color: #25ba9cdb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+
+        a,
+        h4,
+        p {
+          color: $white-text;
+        }
+
+        a {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          border: 1px solid $white-text;
+          line-height: 40px;
+          text-align: center;
+        }
+
+        h4 {
+          margin-top: 26px;
+          @include font-size(15px);
+          font-weight: bold;
+        }
+
+        p {
+          margin-top: 2px;
+          @include font-size(14px);
+        }
+      }
+    }
+  }
+}
