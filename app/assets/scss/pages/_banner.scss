@@ -1,4 +1,4 @@
-@keyframes move-to-left {
+@include keyframes(move-to-left) {
   from {
     opacity: 0;
     transform: translateX(20%);
@@ -9,7 +9,7 @@
   }
 }
 
-@keyframes move-to-right {
+@include keyframes(move-to-right) {
   from {
     opacity: 0;
     transform: translateX(-20%);

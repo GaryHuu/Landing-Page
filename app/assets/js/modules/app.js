@@ -1,5 +1,4 @@
 // Header
-
 function header() {
   const burgerButton = document.querySelector('#burger');
   const navbarToggle = document.querySelector('nav');
@@ -24,7 +23,8 @@ function header() {
 
 header();
 
-function slider() {
+// Banner
+function banner() {
   $('#slider-banner').slick({
     dots: true,
     arrows: false,
@@ -50,14 +50,15 @@ function slider() {
   );
 }
 
-slider();
+banner();
 
+// Features
 function features() {
   $('#slider-features').slick({
     dots: true,
     arrows: false,
     infinite: true,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2500,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -81,3 +82,34 @@ function features() {
 }
 
 features();
+
+// Meet our team
+function meetOurTeam() {
+  $('#meet-our-team-slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+}
+
+meetOurTeam();
