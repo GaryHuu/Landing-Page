@@ -53,7 +53,7 @@
       border-left: 2px solid #546365;
       font-size: 12px;
 
-      @include breakpoint-custom-max(321px) {
+      @include breakpoint-custom-max(320px) {
         display: none;
       }
     }
@@ -101,7 +101,7 @@
       }
     }
 
-    @include breakpoint-custom-max(769px) {
+    @include breakpoint-custom-max(767px) {
       position: absolute;
       background-color: #0eb493;
       height: 100vh;
@@ -180,7 +180,7 @@
       transform: rotate(45deg) translate(-5px, -6.25px);
     }
 
-    @include breakpoint-custom-max(769px) {
+    @include breakpoint-custom-max(767px) {
       display: block;
     }
   }

@@ -1,0 +1,56 @@
+.some-fun-facts {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .common-section {
+    padding-top: 90px;
+
+    @include breakpoint-custom-max(767px) {
+      padding-top: 35px;
+      padding-bottom: 0;
+    }
+  }
+  &__content {
+    @include flex();
+    justify-content: space-around;
+    padding-top: 32px;
+    flex-flow: row wrap;
+
+    @include breakpoint-custom-max(767px) {
+      padding-top: 0;
+      margin-top: -25px;
+    }
+
+    .some-fun-facts__group {
+      text-align: center;
+      color: $white-text;
+      transition: all 0.3s linear;
+
+      @include breakpoint-custom-max(767px) {
+        width: 50%;
+        margin-top: 20px;
+      }
+
+      h3 {
+        margin-top: 30px;
+        @include font-size(56px);
+        font-weight: 500;
+        opacity: 0;
+        transition: all 0.3s linear;
+
+        @include breakpoint-custom-max(767px) {
+          margin-top: 10px;
+          font-size: 40px;
+        }
+      }
+
+      p {
+        text-transform: uppercase;
+        @include font-size(18px);
+        font-weight: 300;
+        white-space: nowrap;
+      }
+    }
+  }
+}

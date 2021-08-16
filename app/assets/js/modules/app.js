@@ -2,12 +2,13 @@
 function header() {
   const burgerButton = document.querySelector('#burger');
   const navbarToggle = document.querySelector('nav');
+  if (!burgerButton || !navbarToggle) return;
   burgerButton.addEventListener('click', () => {
     burgerButton.classList.toggle('toggle');
     navbarToggle.classList.toggle('active');
   });
 
-  //  When reload page check location page
+  //  When reload page then check location page
   if (window.pageYOffset > 680) {
     document.querySelector('header').style.backgroundColor = '#0eb493';
   }
@@ -113,3 +114,35 @@ function meetOurTeam() {
 }
 
 meetOurTeam();
+
+// Some Fun Facts
+function someFunFacts(e) {
+  const counter = document.querySelectorAll('.some-fun-facts__group h3');
+  window.addEventListener('scroll', counterNumber);
+  function counterNumber() {
+    if (window.pageYOffset <= 3485 && window.pageYOffset >= 2800) {
+      setTimeout(() => {
+        const arrayCount = [];
+        counter.forEach((x) => {
+          arrayCount.push(x.innerHTML);
+          x.innerHTML = 0;
+          x.style.opacity = 1;
+        });
+        const handleCount = [];
+        counter.forEach((x, index) => {
+          let count = parseInt(x.innerHTML);
+          handleCount[index] = setInterval(() => {
+            if (count == arrayCount[index] - 1) {
+              clearInterval(handleCount[index]);
+            }
+            count = count + 1;
+            x.innerHTML = count;
+          }, 1);
+        });
+        window.removeEventListener('scroll', counterNumber);
+      }, 200);
+    }
+  }
+}
+
+someFunFacts();
