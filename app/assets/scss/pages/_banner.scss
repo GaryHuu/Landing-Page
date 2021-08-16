@@ -50,7 +50,7 @@
         border: 1px solid #fff;
       }
 
-      @include breakpoint-custom-max(769px) {
+      @include breakpoint-custom-max(767px) {
         right: -4%;
         top: 48%;
       }
@@ -64,7 +64,7 @@
     left: 50%;
     transform: translateX(-50%);
 
-    @include breakpoint-custom-max(769px) {
+    @include breakpoint-custom-max(767px) {
       top: 40%;
     }
 
@@ -104,7 +104,7 @@
         height: 1px;
         background-color: #3deda9;
 
-        @include breakpoint-custom-max(321px) {
+        @include breakpoint-custom-max(320px) {
           display: none;
         }
       }
@@ -149,7 +149,7 @@
     left: 50%;
     transform: translateX(-50%);
 
-    @include breakpoint-custom-max(769px) {
+    @include breakpoint-custom-max(767px) {
       top: 90%;
     }
 
@@ -159,7 +159,7 @@
       padding: 9px;
       transition: 0.3s ease-in;
 
-      @include breakpoint-custom-max(321px) {
+      @include breakpoint-custom-max(320px) {
         padding: 6px;
       }
     }

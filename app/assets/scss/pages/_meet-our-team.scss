@@ -2,11 +2,11 @@
   .common-section {
     padding-bottom: 190px;
 
-    @include breakpoint-custom-max(1024px) {
+    @include breakpoint-custom-max(1023px) {
       padding-bottom: 160px;
     }
 
-    @include breakpoint-custom-max(769px) {
+    @include breakpoint-custom-max(767px) {
       padding-bottom: 130px;
     }
   }
@@ -19,11 +19,11 @@
       font-weight: 600;
       padding: 0 120px;
 
-      @include breakpoint-custom-max(1024px) {
+      @include breakpoint-custom-max(1023px) {
         padding: 0 80px;
       }
 
-      @include breakpoint-custom-max(769px) {
+      @include breakpoint-custom-max(767px) {
         padding: 0 30px;
       }
 
@@ -38,7 +38,7 @@
       margin: 105px -15px 0;
       justify-content: space-between;
 
-      @include breakpoint-custom-max(769px) {
+      @include breakpoint-custom-max(767px) {
         margin-top: 70px;
       }
 
@@ -74,7 +74,7 @@
               flex-direction: column;
               justify-content: space-between;
 
-              @include breakpoint-custom-max(1024px) {
+              @include breakpoint-custom-max(1023px) {
                 justify-content: flex-end;
               }
 
@@ -92,7 +92,7 @@
                 p {
                   margin-top: 12px;
 
-                  @include breakpoint-custom-max(1024px) {
+                  @include breakpoint-custom-max(1023px) {
                     margin-bottom: 17px;
                   }
                 }
@@ -159,11 +159,11 @@
         padding: 0 8px;
       }
 
-      @include breakpoint-custom-max(1024px) {
+      @include breakpoint-custom-max(1023px) {
         top: calc(100% + 65px);
       }
 
-      @include breakpoint-custom-max(769px) {
+      @include breakpoint-custom-max(767px) {
         top: calc(100% + 25px);
       }
     }

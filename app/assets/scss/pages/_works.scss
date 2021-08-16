@@ -11,11 +11,11 @@
       font-weight: 600;
       padding: 0 120px;
 
-      @include breakpoint-custom-max(1024px) {
+      @include breakpoint-custom-max(1023px) {
         padding: 0 80px;
       }
 
-      @include breakpoint-custom-max(769px) {
+      @include breakpoint-custom-max(767px) {
         padding: 0 30px;
       }
 
@@ -62,12 +62,12 @@
       width: 25%;
       position: relative;
 
-      @include breakpoint-custom-max(1024px) {
+      @include breakpoint-custom-max(1023px) {
         width: 50%;
         height: 250px;
       }
 
-      @include breakpoint-custom-max(769px) {
+      @include breakpoint-custom-max(767px) {
         width: 100%;
       }
 

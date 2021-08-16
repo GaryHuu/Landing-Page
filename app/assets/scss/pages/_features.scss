@@ -6,7 +6,7 @@
     padding-bottom: 140px;
     transition: all 0.3s linear;
 
-    @include breakpoint-custom-max(769px) {
+    @include breakpoint-custom-max(767px) {
       padding-top: 50px;
       padding-bottom: 110px;
     }
@@ -23,7 +23,7 @@
     margin-top: 20px;
 
     .features__item:nth-child(1) {
-      @include breakpoint-custom-max(769px) {
+      @include breakpoint-custom-max(767px) {
         margin: 0;
       }
     }
@@ -34,11 +34,11 @@
       padding: 0 14px;
       margin-top: 25px;
 
-      @include breakpoint-custom-max(1025px) {
+      @include breakpoint-custom-max(1023px) {
         width: 50%;
       }
 
-      @include breakpoint-custom-max(769px) {
+      @include breakpoint-custom-max(767px) {
         width: 100%;
       }
 
@@ -60,7 +60,7 @@
           @include font-size(13px);
           color: #062033;
 
-          @include breakpoint-custom-max(769px) {
+          @include breakpoint-custom-max(767px) {
             font-size: 12px;
             margin-top: 10px;
           }
@@ -72,7 +72,7 @@
   .slick-dots {
     top: calc(100% + 60px);
 
-    @include breakpoint-custom-max(769px) {
+    @include breakpoint-custom-max(767px) {
       top: calc(100% + 45px);
     }
   }
