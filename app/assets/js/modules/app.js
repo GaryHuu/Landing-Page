@@ -11,13 +11,19 @@ function header() {
   //  When reload page then check location page
   if (window.pageYOffset > 680) {
     document.querySelector('header').style.backgroundColor = '#0eb493';
+    document.querySelector('.header__slogan').style.color = '#fff';
+    document.querySelector('.header__slogan').style.borderColor = '#fff';
   }
 
   window.addEventListener('scroll', () => {
     if (window.pageYOffset > 680) {
       document.querySelector('header').style.backgroundColor = '#0eb493';
+      document.querySelector('.header__slogan').style.color = '#fff';
+      document.querySelector('.header__slogan').style.borderColor = '#fff';
     } else {
       document.querySelector('header').style.backgroundColor = '#1016363f';
+      document.querySelector('.header__slogan').style.color = '#546365';
+      document.querySelector('.header__slogan').style.borderColor = '#546365';
     }
   });
 }
