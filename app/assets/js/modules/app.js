@@ -2,10 +2,27 @@
 function header() {
   const burgerButton = document.querySelector('#burger');
   const navbarToggle = document.querySelector('nav');
-  if (!burgerButton || !navbarToggle) return;
-  burgerButton.addEventListener('click', () => {
+  const navList = document.querySelectorAll('nav ul li');
+  const logoMobile = document.querySelector('.header__title-mb');
+
+  // Burger Toogle active
+  function burgerToggleActive() {
     burgerButton.classList.toggle('toggle');
     navbarToggle.classList.toggle('active');
+  }
+
+  if (!burgerButton || !navbarToggle) return;
+  burgerButton.addEventListener('click', burgerToggleActive);
+
+  // NavList onclick in mb
+  navList.forEach((navItem) => {
+    navItem.addEventListener('click', burgerToggleActive);
+  });
+
+  // Logo mobile onclick
+  logoMobile.addEventListener('click', () => {
+    burgerButton.classList.remove('toggle');
+    navbarToggle.classList.remove('active');
   });
 
   //  When reload page then check location page
