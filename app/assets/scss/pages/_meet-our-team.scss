@@ -50,7 +50,7 @@
 
           .item-img {
             position: relative;
-            cursor: pointer;
+            cursor: default;
 
             img {
               width: 100%;
@@ -83,6 +83,7 @@
                 p {
                   @include font-size(16px);
                   color: $white-text;
+                  cursor: text;
                 }
 
                 h3 {
